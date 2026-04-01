@@ -15,7 +15,7 @@ agent = create_agent(model="claude-sonnet-4-6", tools=[get_weather])
 
 
 for chunk in agent.stream(
-    {"messages": [{"role": "user", "content": "what's the weather in SF?"}]},
+    {"messages": [{"role": "user", "content": "what is the weather in SF?"}]},
     stream_mode="custom",
     version="v2",
 ):
